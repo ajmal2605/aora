@@ -19,6 +19,9 @@ const RootLayout = () => {
     "Poppins-Regular": require("../assets/fonts/Poppins-Regular.ttf"),
     "Poppins-SemiBold": require("../assets/fonts/Poppins-SemiBold.ttf"),
     "Poppins-Thin": require("../assets/fonts/Poppins-Thin.ttf"),
+    "Montserrat-SemiBold": require("../assets/fonts/Montserrat-SemiBold.ttf"),
+    "GranCru-Light":require("../assets/fonts/GrandCru-LightS.otf"),
+    "Montserrat-Regular": require("../assets/fonts/Montserrat-Regular.ttf")
   });
 
   useEffect(() => {

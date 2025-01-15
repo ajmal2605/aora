@@ -5,5 +5,8 @@ import path from "../assets/images/path.png";
 import logo from "../assets/images/logo.png";
 import logoSmall from "../assets/images/logo-small.png";
 import empty from "../assets/images/empty.png";
+import noise from "../assets/images/noise.png";
+import beingAtPeace from "../assets/images/being-at-peace.png"
+import thinkingSignin from "../assets/images/thinking-signin.png"
 
-export default { profile, thumbnail, cards, path, logo, logoSmall, empty };
+export default { profile, thumbnail, cards, path, logo, logoSmall, empty,noise,beingAtPeace,thinkingSignin };

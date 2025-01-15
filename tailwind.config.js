@@ -29,6 +29,9 @@ module.exports = {
         pbold: ["Poppins-Bold", "sans-serif"],
         pextrabold: ["Poppins-ExtraBold", "sans-serif"],
         pblack: ["Poppins-Black", "sans-serif"],
+        msemibold:["Montserrat-SemiBold", "sans-serif"],
+        grandCruLightS:["GranCru-Light", "sans-serif"],
+        mregular:["Montserrat-Regular","sans-serif"]
       },
     },
   },

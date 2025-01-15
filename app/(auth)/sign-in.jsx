@@ -39,23 +39,27 @@ const SignIn = () => {
   };
 
   return (
-    <SafeAreaView className="bg-primary h-full">
+    <SafeAreaView className="bg-white h-full">
       <ScrollView>
         <View
-          className="w-full flex justify-center h-full px-4 my-6"
+          className="w-full flex justify-center h-full px-4 my-1"
           style={{
             minHeight: Dimensions.get("window").height - 100,
           }}
         >
+          <View className="flex justify-center items-center">
           <Image
-            source={images.logo}
+            source={images.thinkingSignin}
             resizeMode="contain"
-            className="w-[115px] h-[34px]"
+            className="w-[154px] h-[200px]"
           />
 
-          <Text className="text-2xl font-semibold text-white mt-10 font-psemibold">
-            Log in to Aora
-          </Text>
+          <Text style={{ textAlign: 'center'}} className="font-grandCruLightS pb-[5px] pt-[30px] ">
+            <Text style={{ fontSize: 20}}>Plan your Breaks</Text>
+            {'\n'}
+            <Text style={{ fontSize: 30 }}>Professionally</Text>
+            </Text>
+          </View>
 
           <FormField
             title="Email"
@@ -63,29 +67,32 @@ const SignIn = () => {
             handleChangeText={(e) => setForm({ ...form, email: e })}
             otherStyles="mt-7"
             keyboardType="email-address"
+            placeholder={"Enter your Email"}
           />
 
           <FormField
             title="Password"
             value={form.password}
             handleChangeText={(e) => setForm({ ...form, password: e })}
-            otherStyles="mt-7"
+            otherStyles="mt-4"
+            placeholder={"Enter your Password"}
           />
 
           <CustomButton
-            title="Sign In"
+            title="Log In"
             handlePress={submit}
-            containerStyles="mt-7"
+            containerStyles="mt-14"
             isLoading={isSubmitting}
+            textStyles="text-[16px]"
           />
 
           <View className="flex justify-center pt-5 flex-row gap-2">
-            <Text className="text-lg text-gray-100 font-pregular">
-              Don't have an account?
+            <Text className="text-[14px] text-[#222] font-mregular ">
+              Already have an account?
             </Text>
             <Link
               href="/sign-up"
-              className="text-lg font-psemibold text-secondary"
+              className="text-[14px] font-msemibold text-secondary"
             >
               Signup
             </Link>
