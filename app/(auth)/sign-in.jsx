@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, router } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { View, Text, ScrollView, Dimensions, Alert, Image } from "react-native";
+import { View, Text, ScrollView, Dimensions, Alert, Image,KeyboardAvoidingView, Platform } from "react-native";
 
 import { images } from "../../constants";
 import { CustomButton, FormField } from "../../components";
@@ -40,6 +40,10 @@ const SignIn = () => {
 
   return (
     <SafeAreaView className="bg-white h-full">
+      <KeyboardAvoidingView
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
+        style={{ flex: 2 }}
+      >
       <ScrollView>
         <View
           className="w-full flex justify-center h-full px-4 my-1"
@@ -99,6 +103,7 @@ const SignIn = () => {
           </View>
         </View>
       </ScrollView>
+      </KeyboardAvoidingView>
     </SafeAreaView>
   );
 };

@@ -8,5 +8,6 @@ import empty from "../assets/images/empty.png";
 import noise from "../assets/images/noise.png";
 import beingAtPeace from "../assets/images/being-at-peace.png"
 import thinkingSignin from "../assets/images/thinking-signin.png"
+import businessDeal from "../assets/images/business-deal.png"
 
-export default { profile, thumbnail, cards, path, logo, logoSmall, empty,noise,beingAtPeace,thinkingSignin };
+export default { profile, thumbnail, cards, path, logo, logoSmall, empty,noise,beingAtPeace,thinkingSignin,businessDeal };
